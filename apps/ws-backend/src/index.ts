@@ -14,8 +14,6 @@ interface User {
 
 const users: User[] = [];
 
-
-
 function checkUser(token: string): string | null {
     try {
         const decoded = jwt.verify(token, JWT_SECRET)
